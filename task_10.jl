@@ -28,9 +28,3 @@ function putmarker_special!(r::CoordRobot, N::Int)
         putmarker!(r)
     end
 end
-
-#if (r.coord.x % (2 * N)) < N && (r.coord.y % (2 * N)) < N ||
- #   ((r.coord.x + N) % (2 * N)) < N && (r.coord.y % (2 * N)) >= N
-
- #if ((r.coord.x % (N + 1)) < N && (r.coord.y % (N + 1)) < N) ||
-   # (((r.coord.x + N) % (N + 1)) < N && (r.coord.y % (2 * N)) >= N)
