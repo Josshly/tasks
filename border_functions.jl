@@ -51,9 +51,6 @@ function move_around_barrier_steps!(r, side::HorizonSide; steps::Int64=1, marker
             if markers
                 putmarker!(r)
             end
-        elseif get_num_of_steps_in_direction(path, side) == 0
-            steps_to_do = -1
-            break
         end
         if markers && steps_to_do >= 0
             putmarker!(r)
